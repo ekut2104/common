@@ -1,7 +1,7 @@
 import unittest
 import random
 
-from base_types_exceptions_loops.homework import (
+from homework import (
     is_two_object_has_same_value,
     is_two_objects_has_same_type,
     is_two_objects_is_the_same_objects,
@@ -76,7 +76,7 @@ class TestOperationsWithInts(unittest.TestCase):
     def test_multiple_ints_invalid_argument_values(self):
         with self.assertRaises(ValueError):
             multiple_ints(6.0, 2)
-            multiple_ints([12, 5, 7], 2)
+            # multiple_ints([12, 5, 7], 2)
             multiple_ints("Some useful text from from your teacher", 2)
             multiple_ints(True, 2)
 
